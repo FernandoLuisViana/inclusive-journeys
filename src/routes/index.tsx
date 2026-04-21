@@ -81,7 +81,7 @@ function Home() {
         </section>
 
         {/* SEARCH BAR */}
-        <section aria-labelledby="busca-rapida" className="container mx-auto -mt-8 px-4">
+        <section aria-labelledby="busca-rapida" className="container relative z-10 mx-auto -mt-6 px-4 md:-mt-10">
           <h2 id="busca-rapida" className="sr-only">Busca rápida</h2>
           <form
             className="grid gap-3 rounded-2xl border-2 border-border bg-card p-4 shadow-elevated md:grid-cols-[1.4fr_1fr_1fr_auto]"
