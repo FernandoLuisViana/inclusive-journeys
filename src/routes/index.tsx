@@ -27,7 +27,7 @@ function Home() {
         {/* HERO */}
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-[oklch(0.42_0.16_250)]" aria-hidden="true" />
-          <div className="container relative mx-auto grid gap-10 px-4 py-16 lg:grid-cols-[1.1fr_1fr] lg:items-center lg:py-24">
+          <div className="container relative mx-auto grid gap-10 px-4 pb-24 pt-16 md:pb-28 lg:grid-cols-[1.1fr_1fr] lg:items-center lg:py-24 lg:pb-32">
             <div className="text-primary-foreground">
               <span className="inline-flex items-center gap-2 rounded-full bg-sunflower px-3 py-1.5 text-xs font-bold text-sunflower-foreground">
                 <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
