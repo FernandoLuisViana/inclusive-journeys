@@ -178,10 +178,10 @@ function Home() {
               Usamos a simbologia oficial reconhecida pela ONU e pela comunidade PcD para que cada pessoa se identifique.
             </p>
             <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              <SymbolCard color="" label="Infinito arco-íris" desc="Neurodiversidade e comunidade autista" spectrum />
               <SymbolCard color="bg-sunflower" label="Girassol" desc="Deficiências ocultas (TEA, dor crônica, neurodivergência)" />
               <SymbolCard color="bg-success" label="Bengala verde" desc="Baixa visão" />
               <SymbolCard color="bg-background border-2 border-foreground" label="Bengala branca" desc="Cegueira" />
-              <SymbolCard color="bg-destructive" label="Bengala vermelha e branca" desc="Surdocegueira" />
             </div>
           </div>
         </section>
@@ -225,10 +225,14 @@ function Pillar({ icon: Icon, title, text }: { icon: typeof Accessibility; title
   );
 }
 
-function SymbolCard({ color, label, desc }: { color: string; label: string; desc: string }) {
+function SymbolCard({ color, label, desc, spectrum }: { color: string; label: string; desc: string; spectrum?: boolean }) {
   return (
     <div className="rounded-2xl border-2 border-border bg-card p-5">
-      <div className={`h-14 w-14 rounded-full ${color} shadow-soft`} aria-hidden="true" />
+      <div
+        className={`h-14 w-14 rounded-full shadow-soft ${spectrum ? "" : color}`}
+        style={spectrum ? { background: "var(--gradient-spectrum)" } : undefined}
+        aria-hidden="true"
+      />
       <p className="mt-4 text-lg font-extrabold">{label}</p>
       <p className="mt-1 text-sm text-muted-foreground">{desc}</p>
     </div>
