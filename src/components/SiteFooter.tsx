@@ -1,4 +1,5 @@
-import { Accessibility, Heart } from "lucide-react";
+import { Heart } from "lucide-react";
+import logoInfinity from "@/assets/logo-infinity.png";
 
 export function SiteFooter() {
   return (
@@ -6,7 +7,7 @@ export function SiteFooter() {
       <div className="container mx-auto grid gap-8 px-4 py-12 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-2 font-extrabold text-foreground">
-            <Accessibility className="h-5 w-5 text-primary" aria-hidden="true" />
+            <img src={logoInfinity} alt="" width={28} height={28} className="h-7 w-7 object-contain" aria-hidden="true" />
             Viagem sem Barreiras
           </div>
           <p className="mt-3 text-sm text-muted-foreground">

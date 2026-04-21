@@ -49,8 +49,18 @@
   --shadow-soft: 0 2px 8px -2px color-mix(in oklab, var(--primary) 12%, transparent);
   --shadow-elevated: 0 12px 32px -8px color-mix(in oklab, var(--primary) 25%, transparent);
 
-  --gradient-hero: linear-gradient(135deg, var(--primary) 0%, oklch(0.42 0.16 250) 100%);
+  --gradient-hero: linear-gradient(135deg, var(--primary) 0%, oklch(0.42 0.16 295) 100%);
   --gradient-sun: linear-gradient(135deg, var(--sunflower) 0%, oklch(0.78 0.17 75) 100%);
+  /* Espectro — símbolo do infinito da comunidade autista */
+  --gradient-spectrum: linear-gradient(
+    90deg,
+    oklch(0.62 0.22 25) 0%,
+    oklch(0.72 0.19 55) 20%,
+    oklch(0.82 0.17 95) 40%,
+    oklch(0.65 0.18 145) 60%,
+    oklch(0.55 0.20 240) 80%,
+    oklch(0.50 0.22 300) 100%
+  );
 }
 
 :root {
@@ -65,23 +75,23 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.18 0.02 255);
 
-  /* Azul profundo — confiança, contraste AAA com branco */
-  --primary: oklch(0.36 0.15 252);
+  /* Roxo profundo — neurodiversidade, contraste AAA com branco */
+  --primary: oklch(0.38 0.18 295);
   --primary-foreground: oklch(0.99 0 0);
 
   /* Verde inclusão — bengala verde (baixa visão) */
-  --secondary: oklch(0.94 0.04 155);
+  --secondary: oklch(0.94 0.05 155);
   --secondary-foreground: oklch(0.25 0.08 155);
 
-  --muted: oklch(0.96 0.01 250);
-  --muted-foreground: oklch(0.40 0.02 255);
+  --muted: oklch(0.97 0.01 295);
+  --muted-foreground: oklch(0.40 0.02 295);
 
   /* Amarelo girassol — deficiências ocultas */
   --sunflower: oklch(0.86 0.17 92);
   --sunflower-foreground: oklch(0.20 0.05 92);
 
-  --accent: oklch(0.94 0.05 250);
-  --accent-foreground: oklch(0.25 0.10 252);
+  --accent: oklch(0.94 0.06 295);
+  --accent-foreground: oklch(0.28 0.12 295);
 
   --destructive: oklch(0.50 0.22 27);
   --destructive-foreground: oklch(0.99 0 0);
@@ -92,18 +102,18 @@
   --warning: oklch(0.65 0.18 65);
   --warning-foreground: oklch(0.15 0.02 65);
 
-  --border: oklch(0.88 0.01 250);
-  --input: oklch(0.88 0.01 250);
-  --ring: oklch(0.55 0.20 252);
+  --border: oklch(0.88 0.02 295);
+  --input: oklch(0.88 0.02 295);
+  --ring: oklch(0.55 0.22 295);
 
-  --sidebar: oklch(0.98 0.01 250);
-  --sidebar-foreground: oklch(0.18 0.02 255);
-  --sidebar-primary: oklch(0.36 0.15 252);
+  --sidebar: oklch(0.98 0.01 295);
+  --sidebar-foreground: oklch(0.18 0.02 295);
+  --sidebar-primary: oklch(0.38 0.18 295);
   --sidebar-primary-foreground: oklch(0.99 0 0);
-  --sidebar-accent: oklch(0.94 0.05 250);
-  --sidebar-accent-foreground: oklch(0.25 0.10 252);
-  --sidebar-border: oklch(0.88 0.01 250);
-  --sidebar-ring: oklch(0.55 0.20 252);
+  --sidebar-accent: oklch(0.94 0.06 295);
+  --sidebar-accent-foreground: oklch(0.28 0.12 295);
+  --sidebar-border: oklch(0.88 0.02 295);
+  --sidebar-ring: oklch(0.55 0.22 295);
 
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
@@ -135,25 +145,25 @@
 }
 
 .dark {
-  --background: oklch(0.15 0.02 255);
+  --background: oklch(0.15 0.03 295);
   --foreground: oklch(0.98 0 0);
-  --card: oklch(0.20 0.03 255);
+  --card: oklch(0.20 0.04 295);
   --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.20 0.03 255);
+  --popover: oklch(0.20 0.04 295);
   --popover-foreground: oklch(0.98 0 0);
-  --primary: oklch(0.78 0.13 250);
-  --primary-foreground: oklch(0.15 0.02 255);
-  --secondary: oklch(0.25 0.04 155);
-  --secondary-foreground: oklch(0.95 0.02 155);
-  --muted: oklch(0.25 0.02 255);
-  --muted-foreground: oklch(0.75 0.02 255);
-  --accent: oklch(0.28 0.06 250);
-  --accent-foreground: oklch(0.95 0.02 250);
+  --primary: oklch(0.80 0.15 295);
+  --primary-foreground: oklch(0.15 0.03 295);
+  --secondary: oklch(0.25 0.05 155);
+  --secondary-foreground: oklch(0.95 0.03 155);
+  --muted: oklch(0.25 0.03 295);
+  --muted-foreground: oklch(0.75 0.03 295);
+  --accent: oklch(0.30 0.08 295);
+  --accent-foreground: oklch(0.95 0.03 295);
   --sunflower: oklch(0.86 0.17 92);
   --sunflower-foreground: oklch(0.15 0.05 92);
-  --border: oklch(0.30 0.02 255);
-  --input: oklch(0.30 0.02 255);
-  --ring: oklch(0.65 0.15 250);
+  --border: oklch(0.32 0.03 295);
+  --input: oklch(0.32 0.03 295);
+  --ring: oklch(0.70 0.18 295);
 }
 
 @layer base {
